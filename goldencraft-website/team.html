@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <title>GoldenCraft - تیم مدیریت</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- فونت ماینکرفت -->
+    <style>
+        @font-face {
+            font-family: 'Minecraft';
+            src: url('https://fonts.cdnfonts.com/s/16074/Minecraft.ttf') format('truetype');
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Minecraft', sans-serif;
+            color: #ffd700;
+            overflow-x: hidden;
+            background-color: #000;
+        }
+
+        /* بک‌گراند تار فقط برای عکس */
+        .bg {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('Copilot_20260818_062259.jpg') no-repeat center center fixed;
+            background-size: cover;
+            filter: blur(5px);
+            z-index: -1;
+        }
+
+        /* لایه نیمه‌تار */
+        .overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.45);
+            z-index: -1;
+        }
+
+        /* هدر */
+        header {
+            width: 100%;
+            padding: 25px 40px;
+            background: rgba(0,0,0,0.65);
+            border-bottom: 2px solid #ffd700;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-sizing: border-box;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 36px;
+            color: #ffd700;
+            text-shadow: 0 0 10px #000;
+        }
+
+        nav a {
+            margin-left: 25px;
+            color: #ffd700;
+            text-decoration: none;
+            font-size: 20px;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: #fff;
+            text-shadow: 0 0 10px #ffd700;
+        }
+
+        /* سکشن تیم */
+        section {
+            width: 90%;
+            max-width: 1200px;
+            margin: 60px auto;
+            background: #1a1a1a; /* توسی پررنگ */
+            border-radius: 12px;
+            border: 3px solid #ffd700; /* قاب طلایی */
+            padding: 50px;
+            box-sizing: border-box;
+            box-shadow: 0 0 25px #000;
+        }
+
+        section h2 {
+            font-size: 42px;
+            margin-bottom: 25px;
+            color: #ffd700;
+            text-shadow: 0 0 10px #000;
+        }
+
+        section h3 {
+            font-size: 30px;
+            margin-top: 40px;
+            margin-bottom: 15px;
+            color: #ffd700;
+        }
+
+        section p {
+            font-size: 20px;
+            line-height: 2.1;
+            color: #fff;
+            margin-bottom: 20px;
+        }
+
+        .member-box {
+            background: #111;
+            border: 2px solid #ffd700;
+            border-radius: 10px;
+            padding: 25px;
+            margin-bottom: 30px;
+        }
+
+        .member-box h4 {
+            font-size: 26px;
+            margin-bottom: 10px;
+            color: #ffd700;
+        }
+
+        .role {
+            display: inline-block;
+            padding: 6px 12px;
+            background: #ffd700;
+            color: #000;
+            border-radius: 6px;
+            font-size: 16px;
+            margin-bottom: 15px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 25px;
+            background: rgba(0,0,0,0.65);
+            border-top: 2px solid #ffd700;
+            color: #ffd700;
+            margin-top: 60px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="bg"></div>
+    <div class="overlay"></div>
+
+    <!-- هدر -->
+    <header>
+        <h1>GoldenCraft</h1>
+        <nav>
+            <a href="index.html">خانه</a>
+            <a href="rules.html">قوانین</a>
+            <a href="team.html">تیم مدیریت</a>
+            <a href="economy.html">اقتصاد</a>
+            <a href="story.html">داستان سرور</a>
+        </nav>
+    </header>
+
+    <!-- سکشن تیم -->
+    <section>
+        <h2>تیم مدیریت GoldenCraft</h2>
+
+        <p>
+            تیم مدیریت GoldenCraft قلب تپندهٔ سرور است؛ گروهی از افراد باتجربه، مسئولیت‌پذیر، دقیق و فعال که
+            با همکاری یکدیگر تلاش می‌کنند بهترین تجربهٔ ممکن را برای بازیکنان فراهم کنند.  
+            هدف این تیم ایجاد محیطی حرفه‌ای، پایدار، امن و جذاب است.  
+            هر عضو تیم نقش مشخصی دارد و وظایف او به‌طور دقیق تعریف شده تا هیچ بخش از سرور بدون نظارت و مدیریت باقی نماند.
+        </p>
+
+        <p>
+            تیم مدیریت GoldenCraft بر اساس اصولی مانند احترام، نظم، مسئولیت‌پذیری، پاسخ‌گویی و همکاری شکل
+            گرفته است. ما باور داریم که یک سرور خوب فقط با پلاگین و سیستم ساخته نمی‌شود؛ بلکه با مدیریت درست،
+            ارتباط سالم با بازیکنان و توجه به جزئیات است که یک سرور به سطح حرفه‌ای می‌رسد.
+        </p>
+
+        <h3>👑 مدیر اصلی سرور</h3>
+
+        <div class="member-box">
+            <h4>AdofHitler1945</h4>
+            <span class="role">Server Leader</span>
+            <p>
+                مدیر اصلی، سازندهٔ سرور و مسئول تمام تصمیمات نهایی.  
+                طراحی ساختار کلی سرور، مدیریت تیم، نظارت بر عملکرد بخش‌ها، بررسی گزارش‌ها، رسیدگی به مشکلات
+                فنی، مدیریت پلیرها، کنترل نظم سرور و توسعهٔ سیستم‌های جدید همگی تحت نظارت مستقیم ایشان انجام
+                می‌شود.
+            </p>
+            <p>
+                ایشان مسئول هماهنگی بین تیم‌ها، برنامه‌ریزی رویدادها، توسعهٔ نقشه‌ها، انتخاب پلاگین‌ها،
+                مدیریت امنیت سرور و ایجاد مسیر آیندهٔ GoldenCraft است.  
+                هر بخش مهمی از سرور، از اسپاون گرفته تا سیستم اقتصادی، با نظارت و تصمیم‌گیری ایشان ساخته
+                می‌شود.
+            </p>
+        </div>
+
+        <h3>💙 ادمین نئونی</h3>
+
+        <div class="member-box">
+            <h4>Neonparnia</h4>
+            <span class="role">Neon Admin</span>
+            <p>
+                مسئول طراحی داخلی، زیباسازی محیط‌ها، نورپردازی، دکوراسیون، بازسازی سازه‌ها و مدیریت هنری
+                سرور.  
+                پرنیا با سبک نئونی خاص خود، ظاهر سرور را زیبا، جذاب و حرفه‌ای می‌کند.  
+                نورهای نئونی، افکت‌های رنگی، طراحی‌های چشم‌نواز و جزئیات هنری سرور همگی توسط ایشان انجام
+                می‌شود.
+            </p>
+            <p>
+                علاوه بر طراحی، ایشان در مدیریت پلیرها، بررسی گزارش‌ها، رسیدگی به مشکلات رفتاری، کمک به
+                تازه‌واردها و نظارت بر نظم عمومی سرور نیز فعالیت دارد.  
+                حضور ایشان باعث شده GoldenCraft هویت بصری خاص و متفاوتی داشته باشد.
+            </p>
+        </div>
+
+        <h3>⚙️ بخش‌های آینده</h3>
+
+        <div class="member-box">
+            <h4>تیم سازندگان (Builders)</h4>
+            <span class="role">درحال تشکیل</span>
+            <p>
+                این تیم مسئول ساخت سازه‌های بزرگ، مناطق ویژه، رویدادها، نقشه‌های اختصاصی و طراحی‌های
+                معماری خواهد بود.  
+                هدف این تیم ایجاد محیط‌هایی چشم‌نواز، حرفه‌ای و هماهنگ با تم طلایی–مشکی سرور است.
+            </p>
+        </div>
+
+        <div class="member-box">
+            <h4>تیم رویدادها (Event Team)</h4>
+            <span class="role">درحال تشکیل</span>
+            <p>
+                این تیم مسئول طراحی، برنامه‌ریزی و اجرای رویدادهای هفتگی، مسابقات، چالش‌ها و فعالیت‌های
+                گروهی خواهد بود.  
+                هدف این تیم ایجاد سرگرمی، رقابت سالم و تجربه‌های جدید برای بازیکنان است.
+            </p>
+        </div>
+
+        <div class="member-box">
+            <h4>تیم امنیت (Security Team)</h4>
+            <span class="role">درحال تشکیل</span>
+            <p>
+                این تیم مسئول بررسی چیت، جلوگیری از خرابکاری، نظارت بر رفتار بازیکنان، بررسی گزارش‌ها و
+                حفظ امنیت سرور خواهد بود.  
+                هدف این تیم ایجاد محیطی امن و بدون مزاحمت برای همهٔ بازیکنان است.
+            </p>
+        </div>
+
+        <div class="member-box">
+            <h4>تیم اقتصادی (Economy Team)</h4>
+            <span class="role">درحال تشکیل</span>
+            <p>
+                این تیم مسئول تنظیم قیمت‌ها، مدیریت بازار، بررسی معاملات، جلوگیری از تقلب اقتصادی و ایجاد
+                تعادل در سیستم اقتصاد سرور خواهد بود.  
+                هدف این تیم ساخت یک اقتصاد پایدار، جذاب و قابل اعتماد است.
+            </p>
+        </div>
+
+        <p>
+            تیم مدیریت GoldenCraft همیشه درحال گسترش است.  
+            در آینده، نقش‌های بیشتری اضافه خواهند شد و بازیکنان فعال و مسئولیت‌پذیر می‌توانند برای عضویت
+            در تیم درخواست دهند.
+        </p>
+    </section>
+
+    <!-- فوتر -->
+    <footer>
+        © 2026 GoldenCraft — سرور درحال ساخت | IP: goldencraft.server
+    </footer>
+
+</body>
+</html>
