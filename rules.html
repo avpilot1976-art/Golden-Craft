@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <title>GoldenCraft - قوانین سرور</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- فونت ماینکرفت -->
+    <style>
+        @font-face {
+            font-family: 'Minecraft';
+            src: url('https://fonts.cdnfonts.com/s/16074/Minecraft.ttf') format('truetype');
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Minecraft', sans-serif;
+            color: #ffd700;
+            overflow-x: hidden;
+            background-color: #000;
+        }
+
+        /* بک‌گراند تار فقط برای عکس */
+        .bg {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('Copilot_20260818_062259.jpg') no-repeat center center fixed;
+            background-size: cover;
+            filter: blur(5px);
+            z-index: -1;
+        }
+
+        /* لایه نیمه‌تار */
+        .overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.45);
+            z-index: -1;
+        }
+
+        /* هدر */
+        header {
+            width: 100%;
+            padding: 25px 40px;
+            background: rgba(0,0,0,0.65);
+            border-bottom: 2px solid #ffd700;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-sizing: border-box;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 36px;
+            color: #ffd700;
+            text-shadow: 0 0 10px #000;
+        }
+
+        nav a {
+            margin-left: 25px;
+            color: #ffd700;
+            text-decoration: none;
+            font-size: 20px;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: #fff;
+            text-shadow: 0 0 10px #ffd700;
+        }
+
+        /* سکشن قوانین */
+        section {
+            width: 90%;
+            max-width: 1200px;
+            margin: 60px auto;
+            background: #1a1a1a; /* توسی پررنگ */
+            border-radius: 12px;
+            border: 3px solid #ffd700; /* قاب طلایی */
+            padding: 50px;
+            box-sizing: border-box;
+            box-shadow: 0 0 25px #000;
+        }
+
+        section h2 {
+            font-size: 42px;
+            margin-bottom: 25px;
+            color: #ffd700;
+            text-shadow: 0 0 10px #000;
+        }
+
+        section h3 {
+            font-size: 30px;
+            margin-top: 40px;
+            margin-bottom: 15px;
+            color: #ffd700;
+        }
+
+        section p {
+            font-size: 20px;
+            line-height: 2.1;
+            color: #fff;
+            margin-bottom: 20px;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0 0 20px 0;
+        }
+
+        ul li {
+            margin-bottom: 15px;
+            font-size: 20px;
+            color: #fff;
+            line-height: 1.9;
+        }
+
+        ul li::before {
+            content: "• ";
+            color: #ffd700;
+        }
+
+        footer {
+            text-align: center;
+            padding: 25px;
+            background: rgba(0,0,0,0.65);
+            border-top: 2px solid #ffd700;
+            color: #ffd700;
+            margin-top: 60px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="bg"></div>
+    <div class="overlay"></div>
+
+    <!-- هدر -->
+    <header>
+        <h1>GoldenCraft</h1>
+        <nav>
+            <a href="index.html">خانه</a>
+            <a href="rules.html">قوانین</a>
+            <a href="team.html">تیم مدیریت</a>
+            <a href="economy.html">اقتصاد</a>
+            <a href="story.html">داستان سرور</a>
+        </nav>
+    </header>
+
+    <!-- سکشن قوانین -->
+    <section>
+        <h2>قوانین سرور GoldenCraft</h2>
+
+        <p>
+            قوانین GoldenCraft برای ایجاد یک محیط سالم، دوستانه، حرفه‌ای و قابل احترام طراحی شده‌اند.
+            هدف ما این است که همهٔ بازیکنان، بدون توجه به سن، تجربه یا سبک بازی، بتوانند در محیطی امن
+            و منظم بازی کنند. رعایت قوانین برای همهٔ بازیکنان الزامی است و عدم رعایت آن‌ها می‌تواند
+            منجر به اخطار، محرومیت موقت یا بن دائمی شود.
+        </p>
+
+        <h3>۱. احترام و رفتار مناسب</h3>
+        <ul>
+            <li>توهین، تمسخر، تحقیر یا هرگونه رفتار مخرب نسبت به دیگران ممنوع است.</li>
+            <li>استفاده از الفاظ رکیک، تهدید یا ایجاد درگیری لفظی ممنوع است.</li>
+            <li>احترام به تصمیمات تیم مدیریت الزامی است.</li>
+            <li>رفتارهای نژادپرستانه، جنسیت‌زده یا تبعیض‌آمیز به‌طور کامل ممنوع است.</li>
+        </ul>
+
+        <h3>۲. چیت، هک و ابزارهای غیرمجاز</h3>
+        <ul>
+            <li>استفاده از هرگونه چیت، هک، ماکرو یا ابزار خارجی که مزیت ناعادلانه ایجاد کند ممنوع است.</li>
+            <li>استفاده از X-Ray، Fly Hack، Kill Aura، AutoClicker و موارد مشابه منجر به بن دائمی می‌شود.</li>
+            <li>استفاده از باگ‌های بازی یا سرور برای کسب مزیت ممنوع است.</li>
+        </ul>
+
+        <h3>۳. خرابکاری (Griefing)</h3>
+        <ul>
+            <li>خراب کردن خانه، مزرعه، سازه یا وسایل دیگر بازیکنان ممنوع است.</li>
+            <li>دزدیدن آیتم‌ها، منابع یا حیوانات دیگران ممنوع است.</li>
+            <li>ورود به زمین‌های محافظت‌شدهٔ دیگران بدون اجازه ممنوع است.</li>
+        </ul>
+
+        <h3>۴. چت و ارتباطات</h3>
+        <ul>
+            <li>اسپم کردن چت، ارسال پیام‌های پشت‌سرهم یا تبلیغات ممنوع است.</li>
+            <li>ارسال لینک‌های مشکوک یا خطرناک ممنوع است.</li>
+            <li>استفاده از چت برای ایجاد دعوا یا بحث‌های بی‌مورد ممنوع است.</li>
+        </ul>
+
+        <h3>۵. اقتصاد و تجارت</h3>
+        <ul>
+            <li>تقلب در معاملات ممنوع است.</li>
+            <li>قیمت‌گذاری غیرمنطقی برای سوءاستفاده از بازیکنان تازه‌وارد ممنوع است.</li>
+            <li>استفاده از باگ‌های اقتصادی ممنوع است.</li>
+        </ul>
+
+        <h3>۶. ساخت‌وساز</h3>
+        <ul>
+            <li>ساخت سازه‌های توهین‌آمیز، نامناسب یا آزاردهنده ممنوع است.</li>
+            <li>ساخت سازه‌های بسیار بزرگ باید در مناطق مخصوص انجام شود.</li>
+            <li>ساخت در نزدیکی اسپاون باید با اجازهٔ مدیریت باشد.</li>
+        </ul>
+
+        <h3>۷. قوانین عمومی</h3>
+        <ul>
+            <li>پیروی از قوانین و تصمیمات مدیریت الزامی است.</li>
+            <li>عدم رعایت قوانین می‌تواند منجر به اخطار، محرومیت یا بن شود.</li>
+            <li>قوانین ممکن است در آینده تغییر کنند و بازیکنان موظف به رعایت نسخهٔ جدید هستند.</li>
+        </ul>
+
+        <p>
+            GoldenCraft تلاش می‌کند محیطی حرفه‌ای، سالم و جذاب برای همهٔ بازیکنان ایجاد کند.
+            رعایت قوانین باعث می‌شود تجربهٔ بازی برای همه بهتر و لذت‌بخش‌تر باشد.
+        </p>
+    </section>
+
+    <!-- فوتر -->
+    <footer>
+        © 2026 GoldenCraft — سرور درحال ساخت | IP: goldencraft.server
+    </footer>
+
+</body>
+</html>

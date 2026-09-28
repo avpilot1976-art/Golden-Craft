@@ -1,0 +1,22 @@
+body {
+  background: url('Copilot_20260818_062259.jpg') no-repeat center center fixed;
+
+  color: #ffd700;
+  font-family: sans-serif;
+  direction: rtl;
+  padding: 20px;
+}
+h1 {
+  color: #ffd700;
+}
+.bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('Copilot_20260818_062259.jpg') no-repeat center center fixed;
+    background-size: cover;
+    filter: blur(4px);
+    z-index: -1;
+}

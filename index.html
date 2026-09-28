@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <title>GoldenCraft - خانه</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- فونت ماینکرفت -->
+    <style>
+        @font-face {
+            font-family: 'Minecraft';
+            src: url('https://fonts.cdnfonts.com/s/16074/Minecraft.ttf') format('truetype');
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Minecraft', sans-serif;
+            color: #ffd700;
+            overflow-x: hidden;
+            background-color: #000;
+        }
+
+        /* بک‌گراند تار فقط برای عکس */
+        .bg {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('Copilot_20260818_062259.jpg') no-repeat center center fixed;
+            background-size: cover;
+            filter: blur(5px);
+            z-index: -1;
+        }
+
+        /* لایه نیمه‌تار برای خوانایی متن */
+        .overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.45);
+            z-index: -1;
+        }
+
+        /* هدر */
+        header {
+            width: 100%;
+            padding: 25px 40px;
+            background: rgba(0,0,0,0.65);
+            border-bottom: 2px solid #ffd700;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-sizing: border-box;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 36px;
+            color: #ffd700;
+            text-shadow: 0 0 10px #000;
+        }
+
+        nav a {
+            margin-left: 25px;
+            color: #ffd700;
+            text-decoration: none;
+            font-size: 20px;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: #fff;
+            text-shadow: 0 0 10px #ffd700;
+        }
+
+        /* سکشن خانه */
+        section {
+            width: 90%;
+            max-width: 1200px;
+            margin: 60px auto;
+            background: #1a1a1a; /* توسی پررنگ */
+            border-radius: 12px;
+            border: 3px solid #ffd700; /* قاب طلایی */
+            padding: 50px;
+            box-sizing: border-box;
+            box-shadow: 0 0 25px #000;
+        }
+
+        section h2 {
+            font-size: 42px;
+            margin-bottom: 25px;
+            color: #ffd700;
+            text-shadow: 0 0 10px #000;
+        }
+
+        section p {
+            font-size: 20px;
+            line-height: 2.1;
+            color: #fff;
+            margin-bottom: 20px;
+        }
+
+        .hero {
+            margin-top: 120px;
+            text-align: center;
+        }
+
+        .hero h2 {
+            font-size: 48px;
+        }
+
+        .hero .ip-box {
+            margin-top: 25px;
+            display: inline-block;
+            padding: 20px 45px;
+            background: #ffd700;
+            color: #000;
+            font-size: 26px;
+            border-radius: 10px;
+            font-weight: bold;
+            box-shadow: 0 0 15px #000;
+        }
+
+        .hero .status {
+            margin-top: 15px;
+            font-size: 22px;
+            color: #ff5555;
+        }
+
+        .glow {
+            animation: glowAnim 3s infinite alternate;
+        }
+
+        @keyframes glowAnim {
+            from { text-shadow: 0 0 10px #ffd700; }
+            to { text-shadow: 0 0 25px #ffea4d; }
+        }
+
+        footer {
+            text-align: center;
+            padding: 25px;
+            background: rgba(0,0,0,0.65);
+            border-top: 2px solid #ffd700;
+            color: #ffd700;
+            margin-top: 60px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- بک‌گراند و لایه تار -->
+    <div class="bg"></div>
+    <div class="overlay"></div>
+
+    <!-- هدر -->
+    <header>
+        <h1 class="glow">GoldenCraft</h1>
+        <nav>
+            <a href="index.html">خانه</a>
+            <a href="rules.html">قوانین</a>
+            <a href="team.html">تیم مدیریت</a>
+            <a href="economy.html">اقتصاد</a>
+            <a href="story.html">داستان سرور</a>
+        </nav>
+    </header>
+
+    <!-- سکشن خانه -->
+    <section id="home" class="hero">
+        <h2 class="glow">به GoldenCraft خوش آمدید</h2>
+
+        <p>
+            GoldenCraft یک سرور ماینکرفت درحال ساخت است که هدف آن ارائهٔ تجربه‌ای متفاوت، حرفه‌ای و چشم‌نواز
+            برای بازیکنان ایرانی و جهانی است. این صفحهٔ خانه، نقطهٔ شروع ماجراجویی شماست؛ جایی که می‌توانید
+            با هویت سرور، مسیر توسعه، اهداف آینده و فضای کلی GoldenCraft آشنا شوید.
+        </p>
+
+        <div class="ip-box">
+            IP: goldencraft.server  
+        </div>
+
+        <p class="status">سرور درحال ساخت...</p>
+
+        <p>
+            ما در GoldenCraft تلاش می‌کنیم یک دنیای کامل بسازیم؛ دنیایی که فقط یک سرور نباشد، بلکه یک تجربهٔ
+            واقعی باشد. از طراحی سازه‌های اختصاصی گرفته تا سیستم‌های اقتصادی متعادل، از رویدادهای هفتگی گرفته
+            تا جامعهٔ دوستانه و فعال، همه‌چیز با دقت و وسواس ساخته می‌شود تا بازیکن حس کند وارد یک جهان
+            سینمایی شده است.
+        </p>
+
+        <p>
+            این صفحهٔ خانه فقط شروع کار است. در آینده، بخش‌های مختلف سایت شامل قوانین کامل، معرفی تیم مدیریت،
+            سیستم اقتصادی، داستان سرور، تاریخچهٔ آپدیت‌ها و بخش‌های آموزشی اضافه خواهند شد. هر بخش در یک صفحهٔ
+            جداگانه قرار می‌گیرد تا ساختار سایت حرفه‌ای، تمیز و قابل توسعه باشد.
+        </p>
+
+        <p>
+            GoldenCraft هنوز درحال ساخت است، اما همین مرحلهٔ ساخت هم بخشی از داستان سرور است. هر روز چیزی
+            اضافه می‌شود، چیزی بهتر می‌شود، و چیزی کامل‌تر می‌شود. وقتی سرور به‌طور کامل آماده شود، این صفحهٔ
+            خانه تبدیل به دروازهٔ ورود به یک جهان کامل خواهد شد؛ جهانی که با کمک شما ساخته شده است.
+        </p>
+
+        <p>
+            اگر پیشنهاد، انتقاد یا ایده‌ای دارید، خوشحال می‌شویم آن را بشنویم. GoldenCraft یک پروژهٔ زنده است
+            که با کمک جامعهٔ بازیکنان رشد می‌کند. شما بخشی از این داستان هستید.
+        </p>
+    </section>
+
+    <!-- فوتر -->
+    <footer>
+        © 2026 GoldenCraft — سرور درحال ساخت | IP: goldencraft.server
+    </footer>
+
+</body>
+</html>
